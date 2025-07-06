@@ -1,3 +1,7 @@
+// Написать программу для вычисления производной от функции вида сумма a[i]*cos(i*x)
+// Коэффициенты ak реализовать в виде поля - массива класса.
+// Значение функции вычисляется методом класса.Производная является объектом того же класса.
+// Для ее вычисления создать специальный метод.
 #include <cmath>
 #include <iostream>
 using namespace std;
@@ -36,6 +40,6 @@ int main()
     obj.a[i] = i;
   }
   double x = 1;
-  cout << "Result: " << obj.derF(x) << endl;
-  cout << "Check: " << obj.checkderF(x) << endl;
+  cout << "Result: " << obj.derF(x) << endl;     // Result: 30.3332
+  cout << "Check: " << obj.checkderF(x) << endl; // Check : 30.3332
 }
